@@ -71,6 +71,4 @@ user_groups:
 - Visitors
 ---
 
-My research interests lie at the intersection of Statistics, Machine Learning and Economics. 
-
-The title of my PhD is `Policy search via multi-task Gaussian processes and reinforcement learning', which is kindly sponsored by [Just-Eat plc.](https://www.justeatplc.com/). I am supervised by [Petros Dellaportas](http://www.homepages.ucl.ac.uk/~ucakpde/). 
+I am a first-year PhD student in Statistics and Machine Learning at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning and economics. The title of my project is _Policy search via multi-task Gaussian processes and reinforcement learning_, which is kindly sponsored by [Just-Eat plc](https://www.justeatplc.com/). I am supervised by [Petros Dellaportas](http://www.homepages.ucl.ac.uk/~ucakpde/). 
