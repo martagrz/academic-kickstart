@@ -18,9 +18,10 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests lie at the intersection of Statistics, Machine Learning and Economics. The title of my PhD is `Policy search via multi-task Gaussian processes and reinforcement learning. I am supervised by [Petros Dellaportas](http://www.homepages.ucl.ac.uk/~ucakpde/). 
+bio: I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning, computer science and economics. 
 
 interests:
+- Algorithmic Game theory
 - Dynamic Pricing
 - Gaussian Processes
 - (Inverse) Reinforcement Learning
@@ -28,7 +29,7 @@ interests:
 
 education:
   courses:
-  - course: PhD in Statistics & Machine Learning 
+  - course: MPhil/PhD candidate
     institution: Department of Statistical Science, UCL
     year: 2019 - present
   - course: MSc in Data Science
@@ -71,4 +72,4 @@ user_groups:
 - Visitors
 ---
 
-I am a first-year PhD student in Statistics and Machine Learning at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning and economics. The title of my project is _Policy search via multi-task Gaussian processes and reinforcement learning_, which is kindly sponsored by [Just-Eat plc](https://www.justeatplc.com/). I am supervised by [Petros Dellaportas](http://www.homepages.ucl.ac.uk/~ucakpde/). 
+I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning, computer science and economics. My project is kindly sponsored by [Just-Eat plc](https://www.justeatplc.com/). I am supervised by [Petros Dellaportas](http://www.homepages.ucl.ac.uk/~ucakpde/). 
