@@ -21,11 +21,11 @@ organizations:
 bio: I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning, computer science and economics. 
 
 interests:
-- Algorithmic Game theory
+- Inverse Reinforcement Learning
+- Algorithmic Game Theory
+- Multi-task Learning
 - Dynamic Pricing
-- Gaussian Processes
-- (Inverse) Reinforcement Learning
-- Multi-task Learning 
+- Gaussian Processes 
 
 education:
   courses:
