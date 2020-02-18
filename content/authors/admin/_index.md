@@ -18,14 +18,15 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning, computer science and economics. 
+# bio: I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning, computer science and economics. 
 
 interests:
-- Inverse Reinforcement Learning
-- Algorithmic Game Theory
-- Multi-task Learning
-- Dynamic Pricing
-- Gaussian Processes 
+- Multi-agent reinforcement learning
+- Inverse reinforcement learning
+- Multi-task learning
+- Algorithmic game theory
+- Dynamic pricing
+- Gaussian processes 
 
 education:
   courses:
@@ -47,9 +48,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-#- icon: twitter
-#  icon_pack: fab
-#  link: https://twitter.com/GeorgeCushen
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/martagrz1
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
