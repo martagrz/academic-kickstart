@@ -4,7 +4,7 @@ summary: Repeated interactions with the environment allow firms to choose prices
 tags: 
 - Reinforcement learning
 - Dynamic pricing
-date: "2016-04-27T00:00:00Z"
+date: "2020-02-18"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -31,4 +31,4 @@ links:
 #slides: example
 ---
 
-Dynamic pricing relates to the set of problems where firms are required to set prices in response to state variables to maximise their revenue. Traditional approaches assume a functional form of the demand function and optimise for its parameters to find the optimal pricing solution. Reinforcement learning is a powerful tool, suitable for learning pricing policies under uncertainty of the reward function. It is a non-parametric method where a functional form of the function does not have to be assumed and the relationship is learned by trial and error. Therefore, RL is a relevant method for dynamic pricing problems with uncertain demand.
+Dynamic pricing relates to the set of problems where firms are required to set prices in response to state variables to maximise their revenue. Traditional approaches assume a functional form of the demand function and optimise for its parameters to find the optimal pricing solution. Reinforcement learning is a powerful tool, suitable for learning pricing policies under uncertainty of the reward function. It is a non-parametric method where a functional form of the function does not have to be assumed and the relationship is learned by trial and error. Under the conditions of uncertain demand, it is appropriate to apply reinforcement learning methods to dynamic pricing problems.

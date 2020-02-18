@@ -4,7 +4,7 @@ summary: Investigating the properties of a non-stationary RL environment.
 tags: 
 - Reinforcement learning
 - Multi-agent
-date: "2016-04-27T00:00:00Z"
+date: "2020-02-18"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
