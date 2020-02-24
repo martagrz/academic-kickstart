@@ -76,7 +76,7 @@ Further developments on this algorithm include deep Nash-Q learning (Casgrain et
 * Hu, J. and Wellman, M.P., 2003. Nash Q-learning for general-sum stochastic games. *Journal of machine learning research, 4* (Nov), pp.1039-1069.
 * Zhang, K., Yang, Z. and Başar, T., 2019. Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms. *arXiv preprint arXiv:1911.10635.*
 * Casgrain, P., Ning, B. and Jaimungal, S., 2019. Deep Q-learning for Nash equilibria: Nash-DQN. *arXiv preprint arXiv:1904.10554.*
-*Greenwald, A., Hall, K. and Serrano, R., 2003, August. Correlated Q-learning. In *ICML* (Vol. 20, No. 1, p. 242).
-*Maillard, O.A., Munos, R., Lazaric, A. and Ghavamzadeh, M., 2010, October. Finite-sample analysis of Bellman residual minimization. In *Proceedings of 2nd Asian Conference on Machine Learning* (pp. 299-314).
+* Greenwald, A., Hall, K. and Serrano, R., 2003, August. Correlated Q-learning. In *ICML* (Vol. 20, No. 1, p. 242).
+* Maillard, O.A., Munos, R., Lazaric, A. and Ghavamzadeh, M., 2010, October. Finite-sample analysis of Bellman residual minimization. In *Proceedings of 2nd Asian Conference on Machine Learning* (pp. 299-314).
 
 
