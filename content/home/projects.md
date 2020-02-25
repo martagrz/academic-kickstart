@@ -21,21 +21,14 @@ subtitle = ""
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
-   [[content.filter_button]]
-     name = "All"
-     tag = "*"
+   #[[content.filter_button]]
+   #  name = "All"
+   #  tag = "*"
   
-   [[content.filter_button]]
-     name = "Reinforcement learning"
-     tag = "Reinforcement learning"
-  
-   [[content.filter_button]]
-     name = "Dynamic pricing"
-     tag = "Dynamic pricing"
-     
-     [[content.filter_button]]
-     name = "Multi-agent"
-     tag = "Multi-agent"
+   #[[content.filter_button]]
+   #  name = "Reinforcement learning"
+   #  tag = "Reinforcement learning"
+ 
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

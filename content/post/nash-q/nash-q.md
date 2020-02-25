@@ -1,7 +1,12 @@
 ---
-title: Implementing Nash-Q Learning
+title: Implementing Nash Q-Learning
 date: 2020-02-24
 markup: mmark
+tags: 
+- Reinforcement Learning
+- Multi-Agent
+- Q-Learning
+- Equilibirum
 header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
   
@@ -38,8 +43,62 @@ The summary of the algorithm is given below.
 
 ### Implementation 
 
-For the full implementation, see the [github repo](https://github.com/martagrz/multi-agent-reinforcement-learning). In a 4x4 grid, we train two players at starting points (0, 0) and (0, 2) with goals at (3, 2) and (3, 3), respectively. Actions are chosen based on an $\epsilon$-greedy algorithm, with $\epsilon =0.2$, the learning rate is $\alpha=0.2$, the discount rate is $\gamma=0.6$. We train at these values for 1,000 episodes. The quiver plots of the optimal actions at all possible states for both players are shown below.
+For the full implementation, see the [github repo](https://github.com/martagrz/multi-agent-reinforcement-learning). In a 4x4 grid, we train two players at starting points (0, 0) and (0, 2) with goals at (3, 2) and (3, 3), respectively. Actions are chosen based on an $\epsilon$-greedy algorithm, with $\epsilon =0.2$, the learning rate is $\alpha=0.2$, the discount rate is $\gamma=0.6$. We train at these values for 1,000 episodes.
 
+The Nash equilibirum is obtained through the `get_policies` function defined below. It uses the beliefs of the current player to select the best actions for the other players, knowing that all players use an $\epsilon$-greedy policy. 
+
+```python
+def get_policies(self, player, state, greedy=False):
+    policies = np.ones(len(self.env.actions))
+    for other_player in range(self.env.n_players):
+        state_index = self.get_index(state[other_player])
+        greedy_action = np.argmax(self.q_tables[player, other_player, state_index])
+        if not greedy:
+            action_probability_distribution = np.ones(len(self.env.actions))
+            action_probability_distribution *= self.epsilon / len(self.env.actions)
+            action_probability_distribution[greedy_action] += 1 - self.epsilon
+        else:
+            action_probability_distribution = np.zeros(len(self.env.actions))
+            action_probability_distribution[greedy_action] = 1
+        policies = np.dot(policies, action_probability_distribution)
+    return policies
+```
+
+This function is then used in the training, where each episode uses the `while` loop shown below. 
+
+```python 
+while not done.all():
+    for player in range(self.env.n_players):
+        current_state_index = self.get_index(state[player])
+        if not done[player]:
+            actions[player] = np.int(self.choose_action(player, current_state_index))
+        else:
+            actions[player] = 4
+    next_state, rewards, done = self.env.step(state, actions)
+    
+    for n in range(self.env.n_players):
+        policies = self.get_policies(n, next_state)
+        if not done[n]:
+            for m in range(self.env.n_players):
+                current_state_index = self.get_index(state[m])
+                next_state_index = self.get_index(next_state[m])
+                next_state_q = self.q_tables[n, m, next_state_index]
+                nash_q = np.dot(policies, next_state_q)
+                if m != n:
+                    reward = rewards[m] + np.random.normal(0, self.error_variance)
+                    value = (1 - self.alpha) * self.q_tables[n, m, current_state_index, actions[m]] + \
+                                self.alpha * (reward + self.gamma * nash_q)
+    
+                else:
+                    value = (1 - self.alpha) * self.q_tables[n, m, current_state_index, actions[m]] + \
+                                self.alpha * (rewards[m] + self.gamma * nash_q)
+                self.q_tables[n, m, current_state_index, actions[m]] = value
+
+state = next_state
+
+```
+
+The quiver plots of the optimal actions at all possible states for both players are shown below.
 
 ![Optimal policies](/img/posts/nash-q/optimal_policy_0.png)
 

@@ -2,6 +2,9 @@
 title: Introduction to Multi-task Gaussian Processes
 author: Marta Grzeskiewicz
 date: 2020-02-18
+tags: 
+- Multi-Task
+- Gaussian Processes
 markup: mmark
 ---
 
