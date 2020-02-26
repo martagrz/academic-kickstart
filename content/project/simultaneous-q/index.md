@@ -1,6 +1,6 @@
 ---
-title: Simultaneous Q-Learning
-summary: Investigating the properties of a non-stationary RL environment.
+title: Multi-Agent Q-Learning
+summary: Using game theory to address non-stationarity in multi-agent environments. 
 tags: 
 - Reinforcement learning
 - Multi-agent
@@ -31,4 +31,4 @@ links:
 #slides: example
 ---
 
-Multiple agents learning at the same time using a value-based approach leads to a non-stationary environment since it is constantly changing based on the opponent's actions. I am investigating this system, including possible conditions on convergence and properties of this seemingly chaotic system.
+Multiple agents learning at the same time using a value-based approach leads to a non-stationary environment since it is constantly changing based on the opponent's actions. I am investigating this system, including the combination of game theoretic methods and algorithms to maintain structure in this seemingly chaotic system. 

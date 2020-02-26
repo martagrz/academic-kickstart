@@ -1,5 +1,5 @@
 ---
-title: RL in Dynamic Pricing
+title: Reinforcement Learning in Dynamic Pricing
 summary: Repeated interactions with the environment allow firms to choose prices optimally with uncertain demand.
 tags: 
 - Reinforcement learning

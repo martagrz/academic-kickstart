@@ -15,16 +15,16 @@ role: PhD student
 # Organizations/Affiliations
 organizations:
 - name: Department of Statistical Science, UCL
-  url: ""
+  url: "https://www.ucl.ac.uk/statistics/"
 
 # Short bio (displayed in user profile at end of posts)
-# bio: I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning, computer science and economics. 
+# bio: I am a first-year PhD student at the Department of Statistical Science, UCL. 
 
 interests:
 - Multi-agent reinforcement learning
 - Inverse reinforcement learning
-- Multi-task learning
 - Algorithmic game theory
+- Multi-task learning
 - Dynamic pricing
 - Gaussian processes 
 
@@ -73,4 +73,8 @@ user_groups:
 - Visitors
 ---
 
-I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests lie at the intersection of statistics, machine learning, computer science and economics. My project is kindly sponsored by [Just-Eat plc](https://www.justeatplc.com/). I am supervised by [Petros Dellaportas](http://www.homepages.ucl.ac.uk/~ucakpde/). 
+I am a first-year PhD student at the Department of Statistical Science, UCL. My research interests include multi-agent systems, reinforcement learning, inverse reinforcement learning, multi-tasking and transfer learning. I am particularly interested in combining (inverse) reinforcement learning and game theory to model multi-agent systems in asymmetric games. With my background in economics, I want to apply these methods to modelling the behaviours of individuals not only in markets as consumers but also in the choices they make (in a behavioural economics sort of way). 
+
+I use the [posts](#posts) part of this page to keep notes about topics that I find interesting, though not always directly related to my research. As time permits, I implement the methods myself (head over to my [github](https://github.com/martagrz/)) although sometimes I will only write short notes. These pages will occasionally be updated after they are posted. For what I am currently working on, see the [projects](#projects) part of this page. 
+
+My project is kindly sponsored by [Just-Eat plc](https://www.justeatplc.com/) and I am supervised by [Petros Dellaportas](http://www.homepages.ucl.ac.uk/~ucakpde/). 
