@@ -1,9 +1,10 @@
 ---
-title: Neural Processes
+title: 'Introduction to Variational Inference'
 date: 2028-03-10
 markup: mmark
 tags: 
-- Machine Learning
+- Variational Inference
+draft: true
 header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
   
@@ -12,4 +13,12 @@ header-includes:
 ### Introduction
 
 
+### Implementation 
+
+
+### Comments 
+
+
 ### References
+
+

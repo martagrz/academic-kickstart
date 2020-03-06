@@ -6,7 +6,8 @@ tags:
 - Reinforcement Learning
 - Multi-Agent
 - Q-Learning
-- Equilibirum
+- Equilibrium
+- Implementation
 header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
   
@@ -127,7 +128,7 @@ Lastly, Nash equilibrium assumes that the agent holds the correct belief over th
 
 Further developments on this algorithm include deep Nash-Q learning (Casgrain et al, 2019), correlated equilibrium learning (Greenwald et al, 2003), batch RL learning to find approximate Nash equilibrium (Maillard et al, 2010). 
 
-It is worth noting that this method considers only symmetric games, meaning that the players are interchangeable and they face the same reward function. If this were not the case, the Q-table update for the other agents would become more difficult as they do not have the same states and actions. In this case, the problem can be forced or decomposed to be symmetric by introducing an equal probability for each agent to have a role. More on asymmetric games in a future post... 
+It is worth noting that this method considers only symmetric games, meaning that the players are interchangeable and they face the same reward function. If this were not the case, the Q-table update for the other agents would become more difficult as they do not have the same states and actions. In this case, the problem can be forced or decomposed to be symmetric by introducing an equal probability for each agent to have a role. 
 
 
 
