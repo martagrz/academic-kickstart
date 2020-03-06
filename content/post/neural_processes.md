@@ -160,7 +160,7 @@ The performance is measured by the root mean squared error between the target va
 
 ```
 
-That is it! Those are all the parts required to implement the NP. 
+That is it! Those are all the parts required to implement the NP. See [github](https://github.com/martagrz/neural-processes/tree/master/neural-processes) for the full implementation. 
 
 
 # References 
