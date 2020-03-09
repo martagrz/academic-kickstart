@@ -118,7 +118,7 @@ The loss function is given by the ELBO that was derived earlier. It is given by
 $$ \mathcal{L} = - \log p(y_t|\hat{y}_T) + \text{KL}(z_T || z_C)$$
 
 where in general terms, 
-$$\text{KL}(P\parallel Q)=\sum _{x\in {\mathcal {X}}}P(x)\log \left({\frac {P(x)}{Q(x)}}\right).$$ This loss therefore is the ELBO, where $P(x)$ is approximated by another function. 
+$$\text{KL}(P\parallel Q)=\int _{-\infty }^{\infty } P(x)\log \left({\frac {P(x)}{Q(x)}}\right) \text{d}x$$. See the [post on variational inference](https://martagrz.github.io/post/variational-inference/) to see how this was derived.
 
 The first term in the loss function is the likelihood of the true target output given the predicted target output. We want to maximise this likelihood, meaning that our network obtains close to true values. This is regularised by the KL divergence, since we want the distribution of the target and context variables to be the same since they come from the same dataset. 
 
